@@ -9,3 +9,7 @@
 4. worked on the gallery lightbox
 5. fixed all the mistakes of part 2
 6. these changes make my website more aesthetically pleasing and user friendly
+reference:
+1.Relebogile foundation   
+2. Canva (2026) Canva: Design platform. Available at: www.canva.com (Accessed: 7 August 2026).
+3. Microsoft(2026) Microsoft Copilot. Available at: https://copilot.com/?utm_source=chatgpt.com(Accessed: 26 October 2026).
