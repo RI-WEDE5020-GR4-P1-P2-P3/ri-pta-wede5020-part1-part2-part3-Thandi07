@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry| Relebogile Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header class="header" >
+       <span><strong>Relebogile Foundation</strong></span> 
+     <nav style="display:inline;">
+        </nav>
+      </header>
+    <br><br>
+    <h2 style="text-align:center";>Volunteer and Sponsor Enquiries</h2>
+    <p style="text-align:center">
+        Thank you for your interest in supporting
+        Relebogile Foundation.
+        Complete the form below and we will contact you.
+    </p>
+    <br><br>
+    <form id="enquiryForm">
+        <label for="fullname">Full Name: </label>
+    <input type="text" id="fullname" required> <br><br>
+      <label for="email">Email: </label>
+    <input type="email" id="email" required> <br><br>
+     
+    <label for="interest">Enquiry Type: </label>
+        <select id="interest">
+            <option value="">Select</option>
+             <option value="volunteer">Volunteer</option>
+              <option value="sponsor">Sponsor</option>
+        </select><br><br>
+<span id="interestError"></span>
+<br><br>
+<label for="message"> Additional Information: </label><br>
+  <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+<button type="submit">Submit</button>
+    </form>
+    <br>
+    
+    <p id="response"></p><br><br>
+<div class="support-btn">
+    <a href="index.html"> Return Home</a>
+</div><br><br>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Get in touch with Relebogile foundation and learn how to connect with our team.">
+    <title>Contact Us | Relebogile foundation</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet"
+     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+   <!--header tabs(navigation)-->
+     <header class="header" >
+       <span><strong>Relebogile Foundation</strong></span> 
+     <nav style="display:inline;">
+    
+&nbsp;&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;
+&nbsp;&nbsp;<a href="about.html">About Us</a>&nbsp;&nbsp;
+&nbsp;&nbsp;<a href="contact.html">contact</a>&nbsp;&nbsp;
+&nbsp;&nbsp;<a href="project.html">outreach</a>&nbsp;&nbsp;
+
+</nav>
+<form role="search" class="search-form";>
+    <label for="search">🔍</label>
+    <input type="search" id="search" name="search">
+</form>
+</header> 
+<h1>Contact us</h1>
+<p>We would love to hear from you. Whether you want to support our programs,<br>
+ask a question,collaborate or find our address,please reach out</p>
+
+<!--address box--> 
+<h2>Find us here</h2>
+<!--Interactive Map-->
+<div id="map"></div>
+
+<h3>Address</h3>
+<p>239 Pretorius Street<br>
+Pretoria Central<br>
+Pretoria<br>
+1026</p>
+
+<!--message box-->
+<h2>Message us</h2>
+<form id="contactForm" action="mailto:info@relebogilefoundation.org" method="post">
+    <label for="name">Name : </label>
+    <input type="text" id="name" name="name" required><br><br>
+    <span id="nameError"> </span>
+
+    <label for="email">Email : </label>
+    <input type="email" id="email" name="email"><br><br>
+    <span id="emailError"></span>
+
+    <label for="messageType">Type of Message: </label>
+    <select id="messageType" name="messageType" required>
+        <option value="">Select message type</option>
+        <option value="general">General enquiry</option>
+        <option value="volunteer">Volunteer Question</option>
+        <option value="donation">Donation Question</option>
+        <option value="partnership">Partnership Request</option>
+
+    </select>
+<br><br>
+    <label for="message">Message : </label><br>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+<button type="submit">Send message</button>
+</form>
+<!--contact info-->
+<p>Email:<a href="mailto:info@relebogilefoundation.org">info@relebogilefoundation.org</a></p>
+<p><b>Phone: +27 82 455 8991</b><br>
+Mon-Fri,8am-6pm</p>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    var map= L.map('map').setView([-25.7479, 28.1901],15);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+    L.marker([-25.7479, 28.1901]).addTo(map).bindPopup("Relebogile Foundation");
+</script>
+
+<footer>
+    <p>Follow Us</p>
+    <a href="#">Facebook</a>
+    <a href="https://www.instagram.com/relebogile.foundation?vrfl=eWgwcG0zdnAwcnMy" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@rele.foundation?_r=1&_t=ZS-9B3aBrFrjSY" target="_blank">Tiktok</a>
+<p><h5>&copy; 2026 Relebogile Foundation. All rights reserved.</h5></p>
+</footer>
+</body>
+</html>
